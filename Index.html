@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web</title>
+  
+   <style>
+     body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+   .navbar {
+            position: fixed;
+            top: 0;
+            left: 0px; right: 0;
+            height: 101px;
+            /* background-color: lightgreen; */
+            z-index: 2;
+            background-color: aliceblue;
+            border-bottom: 2px solid gray;
+          }
+            .logodiv {
+            display: inline;
+          }
+          .buttonsdiv {
+            display: inline;
+            background-color: blue;
+          }
+          .center {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+          
+          }
+          .right {
+            display: flex;
+            justify-content: right;
+            vertical-align: middle;
+            margin-top: -70px;
+            margin-right: 0vh;
+          }
+          .right button {
+            background-color: transparent;
+            height: 50px;
+            width: 120px;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 2.4vh;
+            border: none;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            border-radius: 20px;
+          }
+          .right button:hover {
+            background-color: lightgray;
+            
+          }
+    .mainbody {
+      margin-top: 80px;
+      margin-bottom: 0px;
+
+    }
+    .options {
+            display: flex;
+      flex-direction: row;
+      width: fit-content;
+      width: 100%;
+    
+    }
+    .men  {
+      width: 33.4%;
+      position: relative;
+    }
+    .women {
+      width: 33.3%;
+      position: relative;
+      
+    }
+    .kids {
+      width: 33.3%;
+      position: relative;
+      
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.468);
+      font-size: 40px;
+      font-family: Lucida Handwriting;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      width: 100%;
+    }
+    @media (max-width:600px) {
+      .navbar img {
+        height: 11vh;
+      }
+      .navbar {
+        height: 12vh;
+      }
+      .mainbody {
+        margin-top: 12vh;
+        height: 80vh;
+      }
+      .options {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .kids {
+        width: 100%;
+        
+      }
+      .women {
+        width: 100%;
+      }
+      .men {
+        width: 100%;
+      }
+      .overlay {
+        font-size: 4vh;
+      }
+      .right button {
+        background-color: transparent;
+            height: 30px;
+            width: 90px;
+            margin-top: 10px;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 2vh;
+            border: none;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            border-radius: 20px;
+      }
+    }
+   </style>
+</head>
+<body>
+            <div class="navbar">  
+          
+            <div class="logodiv">
+
+                <div class="center">
+                    <img src="images/whitebglogo.png" height="90px"> 
+                </div>
+
+            </div>
+            <div class="buttonsdiv">
+              
+                <div class="right">
+                    <button class="right-button">Sign In</button>
+
+                </div>
+
+              </div>
+        
+        </div>
+      <div class="mainbody">
+           
+
+
+
+          <div class="center">
+              <div class="options">
+
+               <a href="Kidspage.html"> <div class="kids"> 
+                 <img src="images/kidsection.jpg" width="100%">  
+                  <div class="overlay">
+                     <p class="category">Kids</p>
+                  </div>
+                </a>
+                </div> 
+
+                <div class="women">
+              <a href="Womenpage.html">     <img src="images/womensect.jpg" width="100%"> </a>
+                  <div class="overlay">
+                     <p class="category">Women</p>
+                  </div> </a>
+                </div>
+                <div class="men">
+               <a href="Menpage.html">   <img src="images/mensect.jpg" width="100%">   </a>
+                  <div class="overlay">
+                     <p class="category">Men</p>
+                  </div> </a>
+                </div>
+          </div>
+      
+</body>
+</html>
